@@ -10,6 +10,6 @@ public class MainClassTest {
         String originalString = mainClass.getClassString();
         String subString = "hello";
 
-        Assert.assertTrue("getClassNumber is smaller or equal than 45",   originalString.contains(subString) || originalString.contains("Hello"));
+        Assert.assertTrue("Original string doesn't contain expeted substring",   originalString.contains(subString) || originalString.contains("Hello"));
     }
 }
