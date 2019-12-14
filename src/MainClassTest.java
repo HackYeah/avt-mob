@@ -4,12 +4,12 @@ import org.junit.Test;
 public class MainClassTest {
 
     @Test
-    public void testGetClassString(){
+    public void testGetClassNumber(){
 
         MainClass mainClass = new MainClass();
-        String originalString = mainClass.getClassString();
-        String subString = "hello";
+        int actual = mainClass.getClassNumber();
+        int expected = 45;
 
-        Assert.assertTrue("getClassNumber is smaller or equal than 45",   originalString.contains(subString) || originalString.contains("Hello"));
+        Assert.assertTrue("getClassNumber is smaller or equal than 45", expected < actual);
     }
 }
