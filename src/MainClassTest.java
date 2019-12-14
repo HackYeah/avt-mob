@@ -4,12 +4,13 @@ import org.junit.Test;
 public class MainClassTest {
 
     @Test
-    public void testGetClassNumber(){
+    public void testGetClassString(){
 
         MainClass mainClass = new MainClass();
-        int actual = mainClass.getClassNumber();
-        int expected = 45;
+        String originalString = mainClass.getClassString();
+        String subStringLow = "hello";
+        String subStringCap = "Hello";
 
-        Assert.assertTrue("getClassNumber is smaller or equal than 45", expected < actual);
+        Assert.assertTrue("Original string doesn't contain expeted substring",   originalString.contains(subStringLow) || originalString.contains(subStringCap));
     }
 }
